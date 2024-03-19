@@ -1,0 +1,4 @@
+baseURL = 'https://aboutdesignsystems.dev/'
+languageCode = 'en-us'
+title = 'Alex Permiakov | Design system consultant & frontend developer'
+theme = 'PaperMod'
