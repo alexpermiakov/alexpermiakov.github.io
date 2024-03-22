@@ -1,0 +1,25 @@
+.menu {
+  position: absolute;
+  padding: 2rem;
+  top: 0;
+  right: 0;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+
+    li {
+      transition: transform 0.2s ease-in-out;
+      font-size: var(--font-size-lg);
+      line-height: var(--line-height-lg);
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+

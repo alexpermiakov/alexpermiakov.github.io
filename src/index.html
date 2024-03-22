@@ -5,92 +5,122 @@
     <title>Design Systems Consultant & Architect | Alex Permiakov</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <style>
-      @import "./styles/main.css";
       @import "./styles/normalize.css";
+      @import "./styles/about.css";
+      @import "./styles/common.css";
+      @import "./styles/main.css";
+      @import "./styles/menu.css";
+      @import "./styles/project.css";
+      @import "./styles/section.css";
+      @import "./styles/services.css";
     </style>
   </head>
   <body>
-    <header>
-      <div>
-        <div class="logo"><a href="#">&nbsp;</a></div>
-        <nav>
-          <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
     <main>
-      <div>
-        <h1>Alex Permiakov — a design systems architect</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
+      <div class="content">
         <div class="about">
           <img
+            class="avatar"
             src="img/me.jpeg"
-            width="150px"
-            height="150px"
+            width="192px"
+            height="192px"
             alt="Alex Permiakov"
           />
-
-          <div class="info">
-            <p>Hi everyone,</p>
-            <p>
-              I'm a design systems architect and tech-lead frontend developer.
-              Throughout my roughly 15-year technical career, I have focused on
-              component-based UI design and development, crafting useful tools
-              for the field, and promoting best practices within large
-              organizations.
-            </p>
-
-            <p>
-              I'm currently elevating design systems, collaborating closely with
-              client teams across design and development, and seamlessly
-              integrating the efforts of designers, developers, and product
-              managers.
-            </p>
-          </div>
-        </div>
-
-        <section id="projects">
-          <h2>Projects</h2>
-          <p>
-            Here are some of the projects I've worked on recently. I've been
-            fortunate to work with some great teams on some really interesting
-            projects.
+          <h1 class="name">Hey everyone, I'm Alex.</h1>
+          <p class="intro">
+            I build efficient design systems for for both large companies and
+            startups.
           </p>
-          <ul>
-            <li>
-              <a href="#">Project 1</a>
-            </li>
-            <li>
-              <a href="#">Project 2</a>
-            </li>
-            <li>
-              <a href="#">Project 3</a>
-            </li>
-            <li>
-              <a href="#">Project 4</a>
-            </li>
-          </ul>
-        </section>
+        </div>
 
         <section id="services">
           <h2>Services</h2>
           <p>
-            I offer a range of services to help you and your team build better
-            design systems and UI components. Here are some of the things I can
-            help with:
+            I specialize in design systems and component-based UI development. I
+            also offer a range of related services:
           </p>
-          <ul>
-            <li>Design system audits</li>
-            <li>Component library development</li>
-            <li>Design system documentation</li>
-            <li>Design system training</li>
-            <li>Component API design</li>
-            <li>Component architecture</li>
+
+          <ul class="services">
+            <li>
+              Establish a strong technical foundation for startups within strict
+              deadlines.
+            </li>
+            <li>
+              Build design systems and component libraries for large companies
+            </li>
+            <li>
+              Coaching to help your team improve their design operations and
+              development skills
+            </li>
+            <li>
+              Workshops on design systems, component-based UI, and related
+              topics
+            </li>
+          </ul>
+
+          <p>
+            I'm based in Berlin, Germany, and am flexible with both in-person
+            and remote projects. I'm also willing to travel for the right
+            opportunity.
+          </p>
+        </section>
+
+        <section id="projects">
+          <h2>Projects</h2>
+          <ul class="project-list">
+            <li class="project">
+              <a href="#">
+                <img src="./img/companies/grundfos.png" alt="Grundfos" />
+                <div class="description">
+                  <h3>Grundfos Design System</h3>
+                </div>
+              </a>
+            </li>
+
+            <li class="project">
+              <a href="#">
+                <img src="./img/companies/bsh.png" alt="Grundfos" />
+                <div class="description">
+                  <h3>Bosch Group Design System</h3>
+                </div>
+              </a>
+            </li>
+
+            <li class="project">
+              <a href="#">
+                <img src="./img/companies/ebay.png" alt="Grundfos" />
+                <div class="description">
+                  <h3>Kijiji AUTOS</h3>
+                </div>
+              </a>
+            </li>
+
+            <li class="project">
+              <a href="#">
+                <img src="./img/companies/zalando.png" alt="Grundfos" />
+                <div class="description">
+                  <h3>Marketing services (zms)</h3>
+                </div>
+              </a>
+            </li>
+
+            <li class="project">
+              <a href="#">
+                <img src="./img/companies/heycar.png" alt="Grundfos" />
+                <div class="description">
+                  <h3>Heycar.com</h3>
+                </div>
+              </a>
+            </li>
           </ul>
         </section>
 
@@ -137,9 +167,6 @@
         </section>
       </div>
     </main>
-    <footer>
-      <p>&copy; Alex Permiakov 2024</p>
-    </footer>
     <script defer src="./scripts/main.js"></script>
   </body>
 </html>
