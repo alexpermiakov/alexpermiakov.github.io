@@ -1,0 +1,29 @@
+#blog {
+  ul {
+    li {
+      position: relative;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background: var(--entry);
+      border-radius: 0.5rem;
+      transition: transform 0.1s;
+      border: 1px solid 1px;
+      .entry-content {
+        margin-block: 0.5rem;
+        color: var(--secondary);
+        font-size: 0.875rem;
+        line-height: 1.6;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+
+      footer {
+        color: var(--secondary);
+        font-size: 0.8125rem;
+      }
+    }
+  }
+}
+

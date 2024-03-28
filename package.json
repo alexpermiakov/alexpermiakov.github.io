@@ -3,7 +3,8 @@
   "source": "src/index.html",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build --no-source-maps"
+    "build": "parcel build --no-source-maps",
+    "start": "serve dist"
   },
   "devDependencies": {
     "parcel": "^2.12.0"

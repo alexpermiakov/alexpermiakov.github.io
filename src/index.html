@@ -2,12 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Design Systems Consultant & Architect | Blog about design systems and component libraries."
+    />
+    <meta
+      name="keywords"
+      content="design systems, component libraries, design systems consultant, design systems architect, design systems blog, react, typescript, web components"
+    />
     <title>Design Systems Consultant & Architect | Alex Permiakov</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <style>
       @import "./styles/normalize.css";
       @import "./styles/about.css";
+      @import "./styles/blog.css";
       @import "./styles/common.css";
+      @import "./styles/contact.css";
       @import "./styles/main.css";
       @import "./styles/menu.css";
       @import "./styles/project.css";
@@ -30,7 +41,7 @@
         <div class="about">
           <img
             class="avatar"
-            src="img/me.jpeg"
+            src="img/me.webp"
             width="192px"
             height="192px"
             alt="Alex Permiakov"
@@ -79,7 +90,12 @@
           <ul class="project-list">
             <li class="project">
               <a href="#">
-                <img src="./img/companies/grundfos.png" alt="Grundfos" />
+                <img
+                  width="300px"
+                  height="138px"
+                  src="./img/companies/grundfos.webp"
+                  alt="Grundfos"
+                />
                 <div class="description">
                   <h3>Grundfos Design System</h3>
                 </div>
@@ -88,7 +104,12 @@
 
             <li class="project">
               <a href="#">
-                <img src="./img/companies/bsh.png" alt="Grundfos" />
+                <img
+                  width="300px"
+                  height="92px"
+                  src="./img/companies/bsh.webp"
+                  alt="BSH"
+                />
                 <div class="description">
                   <h3>Bosch Group Design System</h3>
                 </div>
@@ -97,7 +118,12 @@
 
             <li class="project">
               <a href="#">
-                <img src="./img/companies/ebay.png" alt="Grundfos" />
+                <img
+                  width="300px"
+                  height="130px"
+                  src="./img/companies/ebay.webp"
+                  alt="eBay"
+                />
                 <div class="description">
                   <h3>Kijiji AUTOS</h3>
                 </div>
@@ -106,7 +132,12 @@
 
             <li class="project">
               <a href="#">
-                <img src="./img/companies/zalando.png" alt="Grundfos" />
+                <img
+                  width="300px"
+                  height="58px"
+                  src="./img/companies/zalando.webp"
+                  alt="Zalando"
+                />
                 <div class="description">
                   <h3>Marketing services (zms)</h3>
                 </div>
@@ -115,7 +146,12 @@
 
             <li class="project">
               <a href="#">
-                <img src="./img/companies/heycar.png" alt="Grundfos" />
+                <img
+                  width="300px"
+                  height="157px"
+                  src="./img/companies/heycar.webp"
+                  alt="Heycar"
+                />
                 <div class="description">
                   <h3>Heycar.com</h3>
                 </div>
@@ -132,16 +168,54 @@
           </p>
           <ul>
             <li>
-              <a href="#">Post 1</a>
+              <a
+                target="_blank"
+                href="https://itnext.io/production-ready-node-js-rest-apis-setup-using-typescript-postgresql-and-redis-a9525871407"
+              >
+                <article>
+                  <header>
+                    <h3>
+                      How to simplify your codebase with map(), reduce(), and
+                      filter() in JavaScript
+                    </h3>
+                  </header>
+                  <div class="entry-content">
+                    When you read about Array.reduce and how cool it is, the
+                    first and sometimes the only example you find is the sum of
+                    numbers. This is not our definition of ‘useful’. 🤓
+                    Moreover, I’ve never seen it in a real codebase. But, what
+                    I’ve seen a lot is 7–8 line for-loop statements for solving
+                    a regular task where Array.reduce could do it in one line.
+                  </div>
+                  <footer><span> January 16, 2019</span> · 17 min</footer>
+                </article>
+              </a>
             </li>
             <li>
-              <a href="#">Post 2</a>
-            </li>
-            <li>
-              <a href="#">Post 3</a>
-            </li>
-            <li>
-              <a href="#">Post 4</a>
+              <a
+                target="_blank"
+                href="https://itnext.io/production-ready-node-js-rest-apis-setup-using-typescript-postgresql-and-redis-a9525871407"
+              >
+                <article>
+                  <header>
+                    <h3>
+                      Production ready Node.js REST API Setup using TypeScript,
+                      PostgreSQL and Redis
+                    </h3>
+                  </header>
+                  <div class="entry-content">
+                    A month ago I worked on a simple Search API. All It had to
+                    do is to grab some data from 3rd party services and our
+                    database, combine all it and return it to the client. It
+                    sounds like a good task for two days. But building a service
+                    requires much more than that. It includes caching, logging,
+                    handling all sort of errors, managing node instances,
+                    security, monitoring and it would be great to implement most
+                    of the patterns from Node.js Best Practices.
+                  </div>
+                  <footer><span> December 20, 2018</span> · 17 min</footer>
+                </article>
+              </a>
             </li>
           </ul>
         </section>
@@ -149,25 +223,20 @@
         <section id="contact">
           <h2>Contact</h2>
           <p>
-            If you'd like to get in touch, you can find me on Twitter, LinkedIn,
-            or via email. I'm always happy to chat about design systems, UI
-            components, or anything else you'd like to discuss.
+            If you'd like to get in touch, you can find me on
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/alex-permiakov/"
+              >LinkedIn</a
+            >, or via my email:
+            <a target="_blank" href="mailto:alex@crunchconsulting.de"
+              >alex@crunchconsulting.de</a
+            >. I'm always happy to chat about design systems, UI components, or
+            anything else you'd like to discuss.
           </p>
-          <ul>
-            <li>
-              <a href="#">Twitter</a>
-            </li>
-            <li>
-              <a href="#">LinkedIn</a>
-            </li>
-            <li>
-              <a href="#">Email</a>
-            </li>
-          </ul>
         </section>
       </div>
     </main>
-    <script defer src="./scripts/main.js"></script>
   </body>
 </html>
 
